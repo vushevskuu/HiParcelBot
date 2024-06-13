@@ -1,0 +1,1068 @@
+2024-06-13 07:11:15,607 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:11:16,543 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x1042a7dd0>
+2024-06-13 07:11:16,543 - asyncio - ERROR - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x1023d9850>, 177980.2399575)]']
+connector: <aiohttp.connector.TCPConnector object at 0x1042a7d70>
+2024-06-13 07:14:00,944 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:14:01,942 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 07:14:02,196 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:14:17,669 - aiogram.event - INFO - Update id=606010904 is not handled. Duration 0 ms by bot id=7421368757
+2024-06-13 07:15:06,737 - aiogram.event - INFO - Update id=606010905 is not handled. Duration 0 ms by bot id=7421368757
+2024-06-13 07:16:40,529 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 07:16:40,530 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:16:40,531 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 07:26:40,221 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:26:42,137 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 07:26:42,442 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:26:47,076 - root - INFO - Получено сообщение: /start
+2024-06-13 07:26:47,992 - aiogram.event - INFO - Update id=606010906 is handled. Duration 918 ms by bot id=7421368757
+2024-06-13 07:26:50,944 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 07:26:51,233 - aiogram.event - INFO - Update id=606010907 is handled. Duration 289 ms by bot id=7421368757
+2024-06-13 07:26:54,117 - root - INFO - Получено сообщение: москва
+2024-06-13 07:26:54,421 - aiogram.event - INFO - Update id=606010908 is handled. Duration 304 ms by bot id=7421368757
+2024-06-13 07:26:58,358 - root - INFO - Получено сообщение: питер
+2024-06-13 07:26:58,658 - aiogram.event - INFO - Update id=606010909 is handled. Duration 300 ms by bot id=7421368757
+2024-06-13 07:27:08,497 - root - INFO - Получено сообщение: 04.03.2024
+2024-06-13 07:27:08,813 - aiogram.event - INFO - Update id=606010910 is handled. Duration 318 ms by bot id=7421368757
+2024-06-13 07:27:11,036 - root - INFO - Получено сообщение: 34
+2024-06-13 07:27:11,322 - aiogram.event - INFO - Update id=606010911 is handled. Duration 287 ms by bot id=7421368757
+2024-06-13 07:27:13,631 - root - INFO - Получено сообщение: 13
+2024-06-13 07:27:13,921 - aiogram.event - INFO - Update id=606010912 is handled. Duration 290 ms by bot id=7421368757
+2024-06-13 07:27:15,954 - root - INFO - Получено сообщение: 10
+2024-06-13 07:27:16,248 - aiogram.event - INFO - Update id=606010913 is handled. Duration 295 ms by bot id=7421368757
+2024-06-13 07:27:23,107 - root - INFO - Получено сообщение: Наличные
+2024-06-13 07:27:23,399 - aiogram.event - INFO - Update id=606010914 is handled. Duration 294 ms by bot id=7421368757
+2024-06-13 07:27:25,780 - root - INFO - Получено сообщение: авыва
+2024-06-13 07:27:25,780 - aiogram.event - INFO - Update id=606010915 is not handled. Duration 2 ms by bot id=7421368757
+2024-06-13 07:27:25,781 - aiogram.event - ERROR - Cause exception while process update id=606010915 by bot id=7421368757
+NameError: name 'Advert' is not defined
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 62, in set_comment
+    advert_data = Advert(
+                  ^^^^^^
+NameError: name 'Advert' is not defined
+2024-06-13 07:32:28,783 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 07:32:28,784 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:32:28,784 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 07:32:31,515 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:32:32,404 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 07:32:32,674 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:32:37,715 - root - INFO - Получено сообщение: /start
+2024-06-13 07:32:38,616 - aiogram.event - INFO - Update id=606010916 is handled. Duration 903 ms by bot id=7421368757
+2024-06-13 07:32:40,818 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 07:32:41,148 - aiogram.event - INFO - Update id=606010917 is handled. Duration 332 ms by bot id=7421368757
+2024-06-13 07:32:43,619 - root - INFO - Получено сообщение: м
+2024-06-13 07:32:43,938 - aiogram.event - INFO - Update id=606010918 is handled. Duration 320 ms by bot id=7421368757
+2024-06-13 07:32:45,449 - root - INFO - Получено сообщение: м
+2024-06-13 07:32:45,813 - aiogram.event - INFO - Update id=606010919 is handled. Duration 365 ms by bot id=7421368757
+2024-06-13 07:32:57,328 - root - INFO - Получено сообщение: 04.03.2024
+2024-06-13 07:32:57,640 - aiogram.event - INFO - Update id=606010920 is handled. Duration 312 ms by bot id=7421368757
+2024-06-13 07:32:59,278 - root - INFO - Получено сообщение: 22
+2024-06-13 07:32:59,580 - aiogram.event - INFO - Update id=606010921 is handled. Duration 306 ms by bot id=7421368757
+2024-06-13 07:33:01,292 - root - INFO - Получено сообщение: 22
+2024-06-13 07:33:01,629 - aiogram.event - INFO - Update id=606010922 is handled. Duration 338 ms by bot id=7421368757
+2024-06-13 07:33:03,573 - root - INFO - Получено сообщение: 12
+2024-06-13 07:33:03,879 - aiogram.event - INFO - Update id=606010923 is handled. Duration 308 ms by bot id=7421368757
+2024-06-13 07:33:10,333 - root - INFO - Получено сообщение: Наличные
+2024-06-13 07:33:10,638 - aiogram.event - INFO - Update id=606010924 is handled. Duration 306 ms by bot id=7421368757
+2024-06-13 07:33:12,344 - root - INFO - Получено сообщение: уаыв
+2024-06-13 07:33:12,686 - aiogram.event - INFO - Update id=606010925 is handled. Duration 344 ms by bot id=7421368757
+2024-06-13 07:37:01,413 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 07:37:01,413 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:37:01,413 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 07:51:13,560 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:51:14,365 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 07:51:14,656 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:51:30,228 - root - INFO - Получено сообщение: /start
+2024-06-13 07:51:31,085 - aiogram.event - INFO - Update id=606010926 is handled. Duration 860 ms by bot id=7421368757
+2024-06-13 07:51:32,873 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 07:51:33,160 - aiogram.event - INFO - Update id=606010927 is handled. Duration 287 ms by bot id=7421368757
+2024-06-13 07:51:35,655 - root - INFO - Получено сообщение: v
+2024-06-13 07:51:35,941 - aiogram.event - INFO - Update id=606010928 is handled. Duration 287 ms by bot id=7421368757
+2024-06-13 07:51:36,964 - root - INFO - Получено сообщение: v
+2024-06-13 07:51:37,264 - aiogram.event - INFO - Update id=606010929 is handled. Duration 300 ms by bot id=7421368757
+2024-06-13 07:51:44,661 - root - INFO - Получено сообщение: 11.11.2024
+2024-06-13 07:51:44,969 - aiogram.event - INFO - Update id=606010930 is handled. Duration 309 ms by bot id=7421368757
+2024-06-13 07:51:46,532 - root - INFO - Получено сообщение: 11
+2024-06-13 07:51:46,820 - aiogram.event - INFO - Update id=606010931 is handled. Duration 289 ms by bot id=7421368757
+2024-06-13 07:51:48,348 - root - INFO - Получено сообщение: 11
+2024-06-13 07:51:48,653 - aiogram.event - INFO - Update id=606010932 is handled. Duration 306 ms by bot id=7421368757
+2024-06-13 07:51:50,859 - root - INFO - Получено сообщение: 11
+2024-06-13 07:51:51,217 - aiogram.event - INFO - Update id=606010933 is handled. Duration 360 ms by bot id=7421368757
+2024-06-13 07:51:58,282 - root - INFO - Получено сообщение: Наличные
+2024-06-13 07:51:58,570 - aiogram.event - INFO - Update id=606010934 is handled. Duration 290 ms by bot id=7421368757
+2024-06-13 07:52:02,146 - root - INFO - Получено сообщение: d
+2024-06-13 07:52:02,147 - aiogram.event - INFO - Update id=606010935 is not handled. Duration 2 ms by bot id=7421368757
+2024-06-13 07:52:02,147 - aiogram.event - ERROR - Cause exception while process update id=606010935 by bot id=7421368757
+NameError: name 'Advert' is not defined
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 62, in set_comment
+    advert_data = Advert(
+                  ^^^^^^
+NameError: name 'Advert' is not defined
+2024-06-13 07:55:07,621 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 07:55:07,622 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:55:07,622 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 07:55:11,429 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 07:55:12,275 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 07:55:12,549 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 07:55:20,910 - root - INFO - Получено сообщение: /start
+2024-06-13 07:55:21,768 - aiogram.event - INFO - Update id=606010936 is handled. Duration 858 ms by bot id=7421368757
+2024-06-13 07:55:23,646 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 07:55:23,991 - aiogram.event - INFO - Update id=606010937 is handled. Duration 345 ms by bot id=7421368757
+2024-06-13 07:55:26,304 - root - INFO - Получено сообщение: м
+2024-06-13 07:55:26,562 - aiogram.event - INFO - Update id=606010938 is handled. Duration 258 ms by bot id=7421368757
+2024-06-13 07:55:27,437 - root - INFO - Получено сообщение: м
+2024-06-13 07:55:27,696 - aiogram.event - INFO - Update id=606010939 is handled. Duration 259 ms by bot id=7421368757
+2024-06-13 07:55:36,570 - root - INFO - Получено сообщение: 11.02.2024
+2024-06-13 07:55:36,835 - aiogram.event - INFO - Update id=606010940 is handled. Duration 267 ms by bot id=7421368757
+2024-06-13 07:55:38,753 - root - INFO - Получено сообщение: 22
+2024-06-13 07:55:39,030 - aiogram.event - INFO - Update id=606010941 is handled. Duration 279 ms by bot id=7421368757
+2024-06-13 07:55:40,008 - root - INFO - Получено сообщение: 22
+2024-06-13 07:55:40,281 - aiogram.event - INFO - Update id=606010942 is handled. Duration 275 ms by bot id=7421368757
+2024-06-13 07:55:41,983 - root - INFO - Получено сообщение: 22
+2024-06-13 07:55:42,283 - aiogram.event - INFO - Update id=606010943 is handled. Duration 301 ms by bot id=7421368757
+2024-06-13 07:55:48,579 - root - INFO - Получено сообщение: Наличные
+2024-06-13 07:55:48,874 - aiogram.event - INFO - Update id=606010944 is handled. Duration 296 ms by bot id=7421368757
+2024-06-13 07:55:50,525 - root - INFO - Получено сообщение: в
+2024-06-13 07:55:50,525 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x1084a7100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a436f9ce43dcf3dfe4801, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.035780829684110366>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03411417529894971>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.034766564696561544>]>", "clientId": {"$oid": "666a436f9ce43dcf3dfe4801"}}
+2024-06-13 07:55:50,526 - pymongo.serverSelection - DEBUG - {"message": "Server selection succeeded", "selector": "<function writable_server_selector at 0x1084a7100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a436f9ce43dcf3dfe4801, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.035780829684110366>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03411417529894971>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.034766564696561544>]>", "clientId": {"$oid": "666a436f9ce43dcf3dfe4801"}, "serverHost": "ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net", "serverPort": 27017}
+2024-06-13 07:55:50,761 - aiogram.event - INFO - Update id=606010945 is not handled. Duration 237 ms by bot id=7421368757
+2024-06-13 07:55:50,761 - aiogram.event - ERROR - Cause exception while process update id=606010945 by bot id=7421368757
+OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 279, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2451, in _write
+    with self._client._checkout(self._server, self._session) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1725, in connect
+    conn.authenticate()
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-06-13 08:01:56,692 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 08:01:56,693 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:01:56,693 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 08:01:59,547 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 08:02:00,499 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 08:02:00,804 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:02:06,672 - root - INFO - Получено сообщение: /start
+2024-06-13 08:02:07,588 - aiogram.event - INFO - Update id=606010946 is handled. Duration 917 ms by bot id=7421368757
+2024-06-13 08:02:09,096 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 08:02:09,404 - aiogram.event - INFO - Update id=606010947 is handled. Duration 308 ms by bot id=7421368757
+2024-06-13 08:02:11,539 - root - INFO - Получено сообщение: м
+2024-06-13 08:02:11,825 - aiogram.event - INFO - Update id=606010948 is handled. Duration 287 ms by bot id=7421368757
+2024-06-13 08:02:13,004 - root - INFO - Получено сообщение: м
+2024-06-13 08:02:13,299 - aiogram.event - INFO - Update id=606010949 is handled. Duration 295 ms by bot id=7421368757
+2024-06-13 08:02:22,654 - root - INFO - Получено сообщение: 04.03.2024
+2024-06-13 08:02:22,976 - aiogram.event - INFO - Update id=606010950 is handled. Duration 323 ms by bot id=7421368757
+2024-06-13 08:02:24,664 - root - INFO - Получено сообщение: 22
+2024-06-13 08:02:24,969 - aiogram.event - INFO - Update id=606010951 is handled. Duration 307 ms by bot id=7421368757
+2024-06-13 08:02:26,061 - root - INFO - Получено сообщение: 22
+2024-06-13 08:02:26,362 - aiogram.event - INFO - Update id=606010952 is handled. Duration 303 ms by bot id=7421368757
+2024-06-13 08:02:27,765 - root - INFO - Получено сообщение: 22
+2024-06-13 08:02:28,062 - aiogram.event - INFO - Update id=606010953 is handled. Duration 298 ms by bot id=7421368757
+2024-06-13 08:02:33,980 - root - INFO - Получено сообщение: Наличные
+2024-06-13 08:02:34,264 - aiogram.event - INFO - Update id=606010954 is handled. Duration 285 ms by bot id=7421368757
+2024-06-13 08:02:37,288 - root - INFO - Получено сообщение: 22
+2024-06-13 08:02:37,288 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x108acb100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a45076c9ebd23fc53f3b2, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03596221892535687>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03581556377094239>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03606332399393433>]>", "clientId": {"$oid": "666a45076c9ebd23fc53f3b2"}}
+2024-06-13 08:02:37,289 - pymongo.serverSelection - DEBUG - {"message": "Server selection succeeded", "selector": "<function writable_server_selector at 0x108acb100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a45076c9ebd23fc53f3b2, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03596221892535687>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03581556377094239>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03606332399393433>]>", "clientId": {"$oid": "666a45076c9ebd23fc53f3b2"}, "serverHost": "ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net", "serverPort": 27017}
+2024-06-13 08:02:37,522 - aiogram.event - INFO - Update id=606010955 is not handled. Duration 236 ms by bot id=7421368757
+2024-06-13 08:02:37,522 - aiogram.event - ERROR - Cause exception while process update id=606010955 by bot id=7421368757
+OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 80, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2451, in _write
+    with self._client._checkout(self._server, self._session) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1725, in connect
+    conn.authenticate()
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-06-13 08:05:17,594 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 08:05:17,596 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:05:17,596 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 08:05:19,853 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 08:05:20,703 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 08:05:20,997 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:05:25,223 - root - INFO - Получено сообщение: /start
+2024-06-13 08:05:26,154 - aiogram.event - INFO - Update id=606010956 is handled. Duration 933 ms by bot id=7421368757
+2024-06-13 08:05:27,342 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 08:05:27,343 - root - INFO - Command create_advert received
+2024-06-13 08:05:27,649 - aiogram.event - INFO - Update id=606010957 is handled. Duration 307 ms by bot id=7421368757
+2024-06-13 08:05:30,452 - root - INFO - Получено сообщение: с
+2024-06-13 08:05:30,452 - root - INFO - Setting departure city
+2024-06-13 08:05:30,759 - aiogram.event - INFO - Update id=606010958 is handled. Duration 307 ms by bot id=7421368757
+2024-06-13 08:05:31,574 - root - INFO - Получено сообщение: с
+2024-06-13 08:05:31,574 - root - INFO - Setting destination city
+2024-06-13 08:05:31,879 - aiogram.event - INFO - Update id=606010959 is handled. Duration 306 ms by bot id=7421368757
+2024-06-13 08:05:38,210 - root - INFO - Получено сообщение: 22.22.2222
+2024-06-13 08:05:38,210 - root - INFO - Setting departure date
+2024-06-13 08:05:38,514 - aiogram.event - INFO - Update id=606010960 is handled. Duration 305 ms by bot id=7421368757
+2024-06-13 08:05:40,170 - root - INFO - Получено сообщение: 22
+2024-06-13 08:05:40,170 - root - INFO - Setting available weight
+2024-06-13 08:05:40,457 - aiogram.event - INFO - Update id=606010961 is handled. Duration 290 ms by bot id=7421368757
+2024-06-13 08:05:41,916 - root - INFO - Получено сообщение: 22
+2024-06-13 08:05:41,917 - root - INFO - Setting available volume
+2024-06-13 08:05:42,292 - aiogram.event - INFO - Update id=606010962 is handled. Duration 378 ms by bot id=7421368757
+2024-06-13 08:05:43,788 - root - INFO - Получено сообщение: 22
+2024-06-13 08:05:43,788 - root - INFO - Setting price
+2024-06-13 08:05:44,142 - aiogram.event - INFO - Update id=606010963 is handled. Duration 356 ms by bot id=7421368757
+2024-06-13 08:05:44,950 - root - INFO - Получено сообщение: 2
+2024-06-13 08:05:44,950 - root - INFO - Setting payment method
+2024-06-13 08:05:45,244 - aiogram.event - INFO - Update id=606010964 is handled. Duration 296 ms by bot id=7421368757
+2024-06-13 08:05:47,062 - root - INFO - Получено сообщение: 2
+2024-06-13 08:05:47,062 - root - INFO - Setting comment
+2024-06-13 08:05:47,064 - root - INFO - Data collected: {'departure_city': 'с', 'destination_city': 'с', 'departure_date': '22.22.2222', 'available_weight': 22.0, 'available_volume': 22.0, 'price': 22.0, 'payment_method': '2', 'comment': '2'}
+2024-06-13 08:05:47,064 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x10472f100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a45cfe743121bb5a7a577, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.037988349561346696>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.035296616435516626>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03552733187098056>]>", "clientId": {"$oid": "666a45cfe743121bb5a7a577"}}
+2024-06-13 08:05:47,065 - pymongo.serverSelection - DEBUG - {"message": "Server selection succeeded", "selector": "<function writable_server_selector at 0x10472f100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a45cfe743121bb5a7a577, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.037988349561346696>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.035296616435516626>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03552733187098056>]>", "clientId": {"$oid": "666a45cfe743121bb5a7a577"}, "serverHost": "ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net", "serverPort": 27017}
+2024-06-13 08:05:47,310 - aiogram.event - INFO - Update id=606010965 is not handled. Duration 250 ms by bot id=7421368757
+2024-06-13 08:05:47,311 - aiogram.event - ERROR - Cause exception while process update id=606010965 by bot id=7421368757
+OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 92, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2451, in _write
+    with self._client._checkout(self._server, self._session) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1725, in connect
+    conn.authenticate()
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-06-13 08:08:59,662 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 08:08:59,663 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:08:59,663 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 08:09:02,823 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 08:09:03,625 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 08:09:03,931 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:09:15,638 - root - INFO - Получено сообщение: /start
+2024-06-13 08:09:16,555 - aiogram.event - INFO - Update id=606010966 is handled. Duration 921 ms by bot id=7421368757
+2024-06-13 08:09:18,641 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 08:09:18,989 - aiogram.event - INFO - Update id=606010967 is handled. Duration 348 ms by bot id=7421368757
+2024-06-13 08:09:21,376 - root - INFO - Получено сообщение: м
+2024-06-13 08:09:21,664 - aiogram.event - INFO - Update id=606010968 is handled. Duration 289 ms by bot id=7421368757
+2024-06-13 08:09:22,657 - root - INFO - Получено сообщение: м
+2024-06-13 08:09:22,949 - aiogram.event - INFO - Update id=606010969 is handled. Duration 292 ms by bot id=7421368757
+2024-06-13 08:09:31,782 - root - INFO - Получено сообщение: 22.22.2222
+2024-06-13 08:09:32,115 - aiogram.event - INFO - Update id=606010970 is handled. Duration 333 ms by bot id=7421368757
+2024-06-13 08:09:33,568 - root - INFO - Получено сообщение: 22
+2024-06-13 08:09:33,854 - aiogram.event - INFO - Update id=606010971 is handled. Duration 286 ms by bot id=7421368757
+2024-06-13 08:09:35,845 - root - INFO - Получено сообщение: 22
+2024-06-13 08:09:36,132 - aiogram.event - INFO - Update id=606010972 is handled. Duration 288 ms by bot id=7421368757
+2024-06-13 08:09:40,986 - root - INFO - Получено сообщение: 22
+2024-06-13 08:09:41,310 - aiogram.event - INFO - Update id=606010973 is handled. Duration 325 ms by bot id=7421368757
+2024-06-13 08:09:50,319 - root - INFO - Получено сообщение: Наличные
+2024-06-13 08:09:50,633 - aiogram.event - INFO - Update id=606010974 is handled. Duration 317 ms by bot id=7421368757
+2024-06-13 08:09:52,130 - root - INFO - Получено сообщение: 22
+2024-06-13 08:09:52,130 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x10861b100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a46aeaa0ff2e0549036f5, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03516499365093187>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03471286381203682>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03548395825806074>]>", "clientId": {"$oid": "666a46aeaa0ff2e0549036f5"}}
+2024-06-13 08:09:52,131 - pymongo.serverSelection - DEBUG - {"message": "Server selection succeeded", "selector": "<function writable_server_selector at 0x10861b100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a46aeaa0ff2e0549036f5, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03516499365093187>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03471286381203682>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03548395825806074>]>", "clientId": {"$oid": "666a46aeaa0ff2e0549036f5"}, "serverHost": "ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net", "serverPort": 27017}
+2024-06-13 08:09:52,350 - aiogram.event - INFO - Update id=606010975 is not handled. Duration 223 ms by bot id=7421368757
+2024-06-13 08:09:52,351 - aiogram.event - ERROR - Cause exception while process update id=606010975 by bot id=7421368757
+OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 79, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2451, in _write
+    with self._client._checkout(self._server, self._session) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1725, in connect
+    conn.authenticate()
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-06-13 08:13:07,754 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 08:13:07,755 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:13:07,756 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 08:13:10,532 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 08:13:11,457 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 08:13:11,839 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:13:19,977 - root - INFO - Получено сообщение: /start
+2024-06-13 08:13:21,198 - aiogram.event - INFO - Update id=606010976 is handled. Duration 1222 ms by bot id=7421368757
+2024-06-13 08:13:22,527 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 08:13:22,893 - aiogram.event - INFO - Update id=606010977 is handled. Duration 366 ms by bot id=7421368757
+2024-06-13 08:13:24,747 - root - INFO - Получено сообщение: м
+2024-06-13 08:13:25,018 - aiogram.event - INFO - Update id=606010978 is handled. Duration 271 ms by bot id=7421368757
+2024-06-13 08:13:25,792 - root - INFO - Получено сообщение: м
+2024-06-13 08:13:26,067 - aiogram.event - INFO - Update id=606010979 is handled. Duration 275 ms by bot id=7421368757
+2024-06-13 08:13:32,633 - root - INFO - Получено сообщение: 11.11.2222
+2024-06-13 08:13:32,896 - aiogram.event - INFO - Update id=606010980 is handled. Duration 264 ms by bot id=7421368757
+2024-06-13 08:13:36,829 - root - INFO - Получено сообщение: 11
+2024-06-13 08:13:37,132 - aiogram.event - INFO - Update id=606010981 is handled. Duration 304 ms by bot id=7421368757
+2024-06-13 08:13:41,147 - root - INFO - Получено сообщение: 11
+2024-06-13 08:13:41,446 - aiogram.event - INFO - Update id=606010982 is handled. Duration 300 ms by bot id=7421368757
+2024-06-13 08:13:44,282 - root - INFO - Получено сообщение: 11
+2024-06-13 08:13:44,548 - aiogram.event - INFO - Update id=606010983 is handled. Duration 268 ms by bot id=7421368757
+2024-06-13 08:13:51,931 - root - INFO - Получено сообщение: Наличные
+2024-06-13 08:13:52,282 - aiogram.event - INFO - Update id=606010984 is handled. Duration 353 ms by bot id=7421368757
+2024-06-13 08:13:53,870 - root - INFO - Получено сообщение: 11
+2024-06-13 08:13:53,870 - root - INFO - Starting to set comment
+2024-06-13 08:13:53,871 - root - INFO - Collected data: {'departure_city': 'м', 'destination_city': 'м', 'departure_date': '11.11.2222', 'available_weight': 11.0, 'available_volume': 11.0, 'price': 11.0, 'payment_method': 'Наличные', 'comment': '11'}
+2024-06-13 08:13:53,871 - root - INFO - Advert data to save: advert_id='1e75bf0d-b4f1-49a0-a612-154dfbd08c8c' courier_id=521663506 departure_city='м' destination_city='м' departure_date='11.11.2222' available_weight=11.0 available_volume=11.0 price=11.0 payment_method='Наличные' comment='11' status='CREATED' created_at='2024-06-13T01:13:53.871157' updated_at='2024-06-13T01:13:53.871175' responses=[] is_deleted=False
+2024-06-13 08:13:53,871 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x108f6f100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a47a68a1bcf817d674759, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03497756901802496>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03414054161696695>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03386365586649627>]>", "clientId": {"$oid": "666a47a68a1bcf817d674759"}}
+2024-06-13 08:13:53,872 - pymongo.serverSelection - DEBUG - {"message": "Server selection succeeded", "selector": "<function writable_server_selector at 0x108f6f100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a47a68a1bcf817d674759, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('ac-xtpu1kg-shard-00-00.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03497756901802496>, <ServerDescription ('ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.03414054161696695>, <ServerDescription ('ac-xtpu1kg-shard-00-02.dbb8un4.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03386365586649627>]>", "clientId": {"$oid": "666a47a68a1bcf817d674759"}, "serverHost": "ac-xtpu1kg-shard-00-01.dbb8un4.mongodb.net", "serverPort": 27017}
+2024-06-13 08:13:54,097 - aiogram.event - INFO - Update id=606010985 is not handled. Duration 231 ms by bot id=7421368757
+2024-06-13 08:13:54,097 - aiogram.event - ERROR - Cause exception while process update id=606010985 by bot id=7421368757
+OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 84, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2451, in _write
+    with self._client._checkout(self._server, self._session) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "/opt/homebrew/Cellar/python@3.12/3.12.3/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1725, in connect
+    conn.authenticate()
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/network.py", line 212, in command
+    helpers._check_command_response(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-06-13 08:17:44,270 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-06-13 08:17:44,271 - aiogram.dispatcher - INFO - Polling stopped for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 08:17:44,272 - aiogram.dispatcher - INFO - Polling stopped
+2024-06-13 09:21:11,987 - asyncio - DEBUG - Using selector: KqueueSelector
+2024-06-13 09:21:12,715 - aiogram.dispatcher - INFO - Start polling
+2024-06-13 09:21:12,947 - aiogram.dispatcher - INFO - Run polling for bot @HiParcelBot id=7421368757 - 'HiParcelBot'
+2024-06-13 09:21:31,419 - root - INFO - Получено сообщение: /start
+2024-06-13 09:21:32,181 - aiogram.event - INFO - Update id=606010986 is handled. Duration 765 ms by bot id=7421368757
+2024-06-13 09:21:33,932 - root - INFO - Получено сообщение: /create_advert
+2024-06-13 09:21:34,159 - aiogram.event - INFO - Update id=606010987 is handled. Duration 228 ms by bot id=7421368757
+2024-06-13 09:21:36,475 - root - INFO - Получено сообщение: м
+2024-06-13 09:21:36,702 - aiogram.event - INFO - Update id=606010988 is handled. Duration 227 ms by bot id=7421368757
+2024-06-13 09:21:37,614 - root - INFO - Получено сообщение: м
+2024-06-13 09:21:37,843 - aiogram.event - INFO - Update id=606010989 is handled. Duration 230 ms by bot id=7421368757
+2024-06-13 09:21:45,879 - root - INFO - Получено сообщение: 04.03.2222
+2024-06-13 09:21:46,114 - aiogram.event - INFO - Update id=606010990 is handled. Duration 238 ms by bot id=7421368757
+2024-06-13 09:21:47,835 - root - INFO - Получено сообщение: 22
+2024-06-13 09:21:48,060 - aiogram.event - INFO - Update id=606010991 is handled. Duration 226 ms by bot id=7421368757
+2024-06-13 09:21:49,616 - root - INFO - Получено сообщение: 22
+2024-06-13 09:21:49,848 - aiogram.event - INFO - Update id=606010992 is handled. Duration 233 ms by bot id=7421368757
+2024-06-13 09:21:51,879 - root - INFO - Получено сообщение: 22
+2024-06-13 09:21:52,122 - aiogram.event - INFO - Update id=606010993 is handled. Duration 244 ms by bot id=7421368757
+2024-06-13 09:21:58,182 - root - INFO - Получено сообщение: Наличные
+2024-06-13 09:21:58,422 - aiogram.event - INFO - Update id=606010994 is handled. Duration 241 ms by bot id=7421368757
+2024-06-13 09:22:00,211 - root - INFO - Получено сообщение: в
+2024-06-13 09:22:00,211 - root - INFO - Starting to set comment
+2024-06-13 09:22:00,211 - root - INFO - Collected data: {'departure_city': 'м', 'destination_city': 'м', 'departure_date': '04.03.2222', 'available_weight': 22.0, 'available_volume': 22.0, 'price': 22.0, 'payment_method': 'Наличные', 'comment': 'в'}
+2024-06-13 09:22:00,212 - root - INFO - Advert data to save: advert_id='792a3469-59dd-4d60-b9e9-627e2cd8f103' courier_id=521663506 departure_city='м' destination_city='м' departure_date='04.03.2222' available_weight=22.0 available_volume=22.0 price=22.0 payment_method='Наличные' comment='в' status='CREATED' created_at='2024-06-13T02:22:00.211899' updated_at='2024-06-13T02:22:00.211920' responses=[] is_deleted=False
+2024-06-13 09:22:00,212 - pymongo.serverSelection - DEBUG - {"message": "Server selection started", "selector": "<function writable_server_selector at 0x1048e7100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a5797eda60472fd1d07e8, topology_type: Unknown, servers: [<ServerDescription ('<ip_address>', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "clientId": {"$oid": "666a5797eda60472fd1d07e8"}}
+2024-06-13 09:22:00,212 - pymongo.serverSelection - DEBUG - {"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x1048e7100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a5797eda60472fd1d07e8, topology_type: Unknown, servers: [<ServerDescription ('<ip_address>', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "clientId": {"$oid": "666a5797eda60472fd1d07e8"}, "remainingTimeMS": 29}
+2024-06-13 09:22:30,322 - pymongo.serverSelection - DEBUG - {"message": "Server selection failed", "selector": "<function writable_server_selector at 0x1048e7100>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 666a5797eda60472fd1d07e8, topology_type: Unknown, servers: [<ServerDescription ('<ip_address>', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "clientId": {"$oid": "666a5797eda60472fd1d07e8"}, "failure": "\"<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)\""}
+2024-06-13 09:22:30,324 - aiogram.event - INFO - Update id=606010995 is not handled. Duration 30115 ms by bot id=7421368757
+2024-06-13 09:22:30,325 - aiogram.event - ERROR - Cause exception while process update id=606010995 by bot id=7421368757
+ServerSelectionTimeoutError: <ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 666a5797eda60472fd1d07e8, topology_type: Unknown, servers: [<ServerDescription ('<ip_address>', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/middlewares/logging_middleware.py", line 8, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/handlers/advert_handler.py", line 84, in set_comment
+    db_service.save_advert(advert_data)
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/telegram_bot/services/db_service.py", line 10, in save_advert
+    adverts_collection.insert_one(advert.dict())
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 658, in insert_one
+    self._insert_one(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/collection.py", line 598, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1569, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1455, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1501, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2347, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2450, in _write
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 2433, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/mongo_client.py", line 1316, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/topology.py", line 368, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/topology.py", line 346, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/topology.py", line 253, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vishnevsky/Desktop/HiParcel/venv/lib/python3.12/site-packages/pymongo/topology.py", line 303, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: <ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 666a5797eda60472fd1d07e8, topology_type: Unknown, servers: [<ServerDescription ('<ip_address>', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('<ip_address>:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>

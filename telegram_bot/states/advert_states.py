@@ -1,0 +1,21 @@
+from aiogram.fsm.state import State, StatesGroup
+
+class AdvertStates(StatesGroup):
+    waiting_for_departure_city = State()
+    waiting_for_destination_city = State()
+    waiting_for_departure_date = State()
+    waiting_for_available_weight = State()
+    waiting_for_available_volume = State()
+    waiting_for_price = State()
+    waiting_for_payment_method = State()
+    waiting_for_comment = State()
+    waiting_for_advert_id = State()
+    waiting_for_advert_id_to_edit = State()
+    waiting_for_new_departure_city = State()
+    waiting_for_new_destination_city = State()
+    waiting_for_new_departure_date = State()
+    waiting_for_new_available_weight = State()
+    waiting_for_new_available_volume = State()
+    waiting_for_new_price = State()
+    waiting_for_new_payment_method = State()
+    waiting_for_new_comment = State()
